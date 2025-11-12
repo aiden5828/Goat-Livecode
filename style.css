@@ -55,4 +55,36 @@ a:hover {
   text-decoration: underline;
 }
 
+header {
+  grid-area: h; 
+}
+
+nav {
+  grid-area: n;
+}
+
+footer {
+  grid-area: f;
+}
+
+main {
+  grid-area: m;
+}
+
+#logo {
+  grid-area: p;
+  width: 100%;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /* grid-template-rows: 1fr 3fr 1fr; */
+  grid-template-areas: 
+  "h h p"
+  "n m m"
+  "f f f"
+  ;
+}
+
 
